@@ -13,6 +13,7 @@ namespace Racionales
 {
     public partial class Form3 : Form
     {
+        //comentario
         public Form3()
         {
             InitializeComponent();
