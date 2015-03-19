@@ -1,6 +1,6 @@
 ﻿namespace Racionales
 {
-    partial class Frestas
+    partial class Fsumas
     {
         /// <summary>
         /// Required designer variable.

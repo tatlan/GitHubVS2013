@@ -19,7 +19,7 @@ namespace Racionales
 
         private void ir_a_sumas_Click(object sender, EventArgs e)
         {
-            Frestas frm = new Frestas();
+            Fsumas frm = new Fsumas();
 
             frm.Show();
         }
@@ -27,6 +27,13 @@ namespace Racionales
         private void ir_a_calculadora_Click(object sender, EventArgs e)
         {
             Calculadora frm = new Calculadora();
+
+            frm.Show();
+        }
+
+        private void ir_a_restas_Click(object sender, EventArgs e)
+        {
+            Frestas frm = new Frestas();
 
             frm.Show();
         }

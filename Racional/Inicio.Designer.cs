@@ -59,6 +59,7 @@
             this.ir_a_restas.TabIndex = 1;
             this.ir_a_restas.Text = "Restas";
             this.ir_a_restas.UseVisualStyleBackColor = false;
+            this.ir_a_restas.Click += new System.EventHandler(this.ir_a_restas_Click);
             // 
             // ir_a_multiplicar
             // 

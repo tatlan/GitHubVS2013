@@ -57,6 +57,22 @@ namespace Racionales.Model
             int denominador = this.denominador * r.getDenominador();
             return new Racional(numerador, denominador);
         }
+
+        public Racional restar(Racional r)
+        {
+            int denominador1 = this.denominador;
+            int denominador2 = r.getDenominador();
+            if (denominador1 == denominador2)
+            {
+                int numerador3 = this.numerador - r.getNumerador();
+                int denominador3 = this.denominador;
+                return new Racional(numerador3, denominador3);
+
+            }
+            int numerador = this.numerador * r.getDenominador() - this.denominador * r.getNumerador();
+            int denominador = this.denominador * r.getDenominador();
+            return new Racional(numerador, denominador);
+        }
         
         public Racional multiplicar(Racional r)
         {

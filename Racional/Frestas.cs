@@ -11,9 +11,9 @@ using Racionales.Model;
 
 namespace Racionales
 {
-    public partial class Fsumas : Form
+    public partial class Frestas : Form
     {
-        public Fsumas()
+        public Frestas()
         {
             InitializeComponent();
         }
@@ -53,18 +53,18 @@ namespace Racionales
 
             Racional r1 = new Racional(n1, d1);
             Racional r2 = new Racional(n2, d2);
-            Racional suma = r1.sumar(r2);
+            Racional resta = r1.restar(r2);
             Racional r3 = new Racional(n3,d3);
-            resultadonumerador2.Text = suma.getNumerador().ToString();
-            resultadodenominador2.Text = suma.getDenominador().ToString();
+            resultadonumerador2.Text = resta.getNumerador().ToString();
+            resultadodenominador2.Text = resta.getDenominador().ToString();
 
-            if (r3.equivalencia(suma)==true){
+            if (r3.equivalencia(resta)==true){
                 int aciertos = Convert.ToInt16(cuentaaciertos.Text) + 1;
                 cuentaaciertos.Text=aciertos.ToString();
                 
                 
             }
-            else if (r3.equivalencia(suma)==false){
+            else if (r3.equivalencia(resta)==false){
                 int fallos = Convert.ToInt16(cuentafallos.Text) + 1;
                 cuentafallos.Text = fallos.ToString();
             }
