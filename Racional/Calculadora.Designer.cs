@@ -1,6 +1,6 @@
 ﻿namespace Racionales
 {
-    partial class Form3
+    partial class Calculadora
     {
         /// <summary>
         /// Required designer variable.
@@ -192,7 +192,7 @@
             this.igualdadesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.igualdadesToolStripMenuItem.Text = "Igualdades";
             // 
-            // Form3
+            // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -210,8 +210,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form3";
-            this.Text = "Form1";
+            this.Name = "Calculadora";
+            this.Text = "Calculadora";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

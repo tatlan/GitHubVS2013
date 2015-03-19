@@ -11,16 +11,17 @@ using Racionales.Model;
 
 namespace Racionales
 {
-    public partial class Fsumas : Form
+    public partial class Frestas : Form
     {
-        public Fsumas()
+        public Frestas()
         {
             InitializeComponent();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            cuentaaciertos.Text = "0";
+            cuentafallos.Text = "0";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,12 +48,26 @@ namespace Racionales
             int d1 = Convert.ToInt16(denominador1.Text);
             int n2 = Convert.ToInt16(numerador2.Text);
             int d2 = Convert.ToInt16(denominador2.Text);
+            int n3 = Convert.ToInt16(respuestanumerador1.Text);
+            int d3 = Convert.ToInt16(respuestadenominador1.Text);
 
             Racional r1 = new Racional(n1, d1);
             Racional r2 = new Racional(n2, d2);
             Racional suma = r1.sumar(r2);
+            Racional r3 = new Racional(n3,d3);
             resultadonumerador2.Text = suma.getNumerador().ToString();
             resultadodenominador2.Text = suma.getDenominador().ToString();
+
+            if (r3.equivalencia(suma)==true){
+                int aciertos = Convert.ToInt16(cuentaaciertos.Text) + 1;
+                cuentaaciertos.Text=aciertos.ToString();
+                
+                
+            }
+            else if (r3.equivalencia(suma)==false){
+                int fallos = Convert.ToInt16(cuentafallos.Text) + 1;
+                cuentafallos.Text = fallos.ToString();
+            }
         }
     }
 }

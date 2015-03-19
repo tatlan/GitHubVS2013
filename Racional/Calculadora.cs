@@ -11,10 +11,10 @@ using Racionales.Model;
 
 namespace Racionales
 {
-    public partial class Form3 : Form
+    public partial class Calculadora : Form
     {
         //comentario
-        public Form3()
+        public Calculadora()
         {
             InitializeComponent();
         }
@@ -59,7 +59,7 @@ namespace Racionales
             int d2 = Convert.ToInt16(textBox4.Text);
             Racional r1 = new Racional(n1, d1);
             Racional r2 = new Racional(n2, d2);
-            string equivalente = r1.equivalencia(r2);
+            string equivalente = r1.equivalencia2(r2);
             textBox7.Text = equivalente;
 
 
@@ -67,7 +67,7 @@ namespace Racionales
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Fsumas frm = new Fsumas();
+            Frestas frm = new Frestas();
 
             frm.Show();
             
@@ -95,7 +95,7 @@ namespace Racionales
 
         private void sumasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Fsumas frm = new Fsumas();
+            Frestas frm = new Frestas();
 
             frm.Show();
         }

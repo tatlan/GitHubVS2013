@@ -1,6 +1,6 @@
 ﻿namespace Racionales
 {
-    partial class Fsumas
+    partial class Frestas
     {
         /// <summary>
         /// Required designer variable.
@@ -164,7 +164,7 @@
             this.cuentaaciertos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cuentaaciertos.Enabled = false;
             this.cuentaaciertos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cuentaaciertos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cuentaaciertos.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cuentaaciertos.Location = new System.Drawing.Point(357, 191);
             this.cuentaaciertos.Name = "cuentaaciertos";
             this.cuentaaciertos.Size = new System.Drawing.Size(58, 31);
@@ -173,6 +173,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(354, 158);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
@@ -183,6 +184,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(441, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);

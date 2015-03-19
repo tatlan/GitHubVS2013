@@ -77,7 +77,22 @@ namespace Racionales.Model
             return new Racional(this.numerador, this.denominador);*/
 
         }
-        public String equivalencia(Racional r)
+        public Boolean equivalencia(Racional r)
+        {
+            int numerador = this.numerador * r.getDenominador();
+            int denominador = this.denominador * r.getNumerador();
+            if (numerador == denominador)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+        public String equivalencia2(Racional r)
         {
             int numerador = this.numerador * r.getDenominador();
             int denominador = this.denominador * r.getNumerador();
