@@ -88,10 +88,6 @@ namespace Racionales.Model
             int denominador = this.denominador * r.getNumerador();
             return new Racional(numerador, denominador);
 
-            /*this.setNumerador(this.numerador * r.getDenominador());
-            this.setDenominador(this.denominador * r.getNumerador());
-            return new Racional(this.numerador, this.denominador);*/
-
         }
         public Boolean equivalencia(Racional r)
         {

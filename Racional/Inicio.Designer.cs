@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.ir_a_sumas = new System.Windows.Forms.Button();
             this.ir_a_restas = new System.Windows.Forms.Button();
             this.ir_a_multiplicar = new System.Windows.Forms.Button();
@@ -37,7 +38,9 @@
             // 
             // ir_a_sumas
             // 
+            this.ir_a_sumas.AccessibleName = "";
             this.ir_a_sumas.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ir_a_sumas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ir_a_sumas.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ir_a_sumas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ir_a_sumas.Location = new System.Drawing.Point(234, 30);
@@ -51,6 +54,7 @@
             // ir_a_restas
             // 
             this.ir_a_restas.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ir_a_restas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ir_a_restas.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ir_a_restas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ir_a_restas.Location = new System.Drawing.Point(234, 96);
@@ -64,6 +68,7 @@
             // ir_a_multiplicar
             // 
             this.ir_a_multiplicar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ir_a_multiplicar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ir_a_multiplicar.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ir_a_multiplicar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ir_a_multiplicar.Location = new System.Drawing.Point(234, 153);
@@ -72,10 +77,12 @@
             this.ir_a_multiplicar.TabIndex = 2;
             this.ir_a_multiplicar.Text = "Multiplicaciones";
             this.ir_a_multiplicar.UseVisualStyleBackColor = false;
+            this.ir_a_multiplicar.Click += new System.EventHandler(this.ir_a_multiplicar_Click);
             // 
             // ir_a_divisiones
             // 
             this.ir_a_divisiones.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ir_a_divisiones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ir_a_divisiones.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ir_a_divisiones.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ir_a_divisiones.Location = new System.Drawing.Point(470, 30);
@@ -84,10 +91,12 @@
             this.ir_a_divisiones.TabIndex = 3;
             this.ir_a_divisiones.Text = "Divisiones";
             this.ir_a_divisiones.UseVisualStyleBackColor = false;
+            this.ir_a_divisiones.Click += new System.EventHandler(this.ir_a_divisiones_Click);
             // 
             // ir_a_calculadora
             // 
             this.ir_a_calculadora.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ir_a_calculadora.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ir_a_calculadora.Font = new System.Drawing.Font("Hobo Std", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ir_a_calculadora.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ir_a_calculadora.Location = new System.Drawing.Point(470, 106);
@@ -108,6 +117,7 @@
             this.Controls.Add(this.ir_a_multiplicar);
             this.Controls.Add(this.ir_a_restas);
             this.Controls.Add(this.ir_a_sumas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Inicio";
             this.Text = "Inicio";
             this.ResumeLayout(false);

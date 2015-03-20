@@ -37,5 +37,19 @@ namespace Racionales
 
             frm.Show();
         }
+
+        private void ir_a_multiplicar_Click(object sender, EventArgs e)
+        {
+            Fmultiplicaciones frm = new Fmultiplicaciones();
+
+            frm.Show();
+        }
+
+        private void ir_a_divisiones_Click(object sender, EventArgs e)
+        {
+            Fdivisiones frm = new Fdivisiones();
+
+            frm.Show();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Racionales
 {
-    partial class Fsumas
+    partial class Frestas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fsumas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frestas));
             this.denominador1 = new System.Windows.Forms.TextBox();
             this.numerador1 = new System.Windows.Forms.TextBox();
             this.denominador2 = new System.Windows.Forms.TextBox();
@@ -111,7 +111,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 23);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Haz una suma";
+            this.button1.Text = "Haz una resta";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -193,7 +193,7 @@
             this.label2.Text = "FALLOS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Fsumas
+            // Frestas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,8 +213,8 @@
             this.Controls.Add(this.denominador1);
             this.Controls.Add(this.numerador1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Fsumas";
-            this.Text = "Ejercicios de sumas";
+            this.Name = "Frestas";
+            this.Text = "Ejercicios de restas";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
